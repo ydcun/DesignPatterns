@@ -1408,7 +1408,7 @@
 				    fill_color 	13434879
 				    anchor     	2
 				    nlines     	4
-				    max_width  	298)
+				    max_width  	303)
 				width      	372
 				height     	294
 				annotation 	8
@@ -1456,7 +1456,7 @@
 				    fill_color 	13434879
 				    anchor     	2
 				    nlines     	3
-				    max_width  	544)
+				    max_width  	546)
 				width      	660
 				height     	248
 				annotation 	8
@@ -1510,7 +1510,7 @@
 				    fill_color 	13434879
 				    anchor     	2
 				    nlines     	2
-				    max_width  	169)
+				    max_width  	178)
 				width      	222
 				height     	194
 				annotation 	8
@@ -1557,7 +1557,7 @@
 				    fill_color 	13434879
 				    anchor     	2
 				    nlines     	2
-				    max_width  	169)
+				    max_width  	178)
 				width      	266
 				height     	194
 				annotation 	8
@@ -1604,7 +1604,7 @@
 				    fill_color 	13434879
 				    anchor     	2
 				    nlines     	2
-				    max_width  	169)
+				    max_width  	178)
 				width      	222
 				height     	194
 				annotation 	8
@@ -1857,6 +1857,436 @@
 				line_color 	3342489
 				client     	@58
 				supplier   	@73
+				line_style 	0)
+			    (object NoteView @79
+				location   	(2416, 1980)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@79
+				    location   	(1684, 1746)
+				    fill_color 	13434879
+				    nlines     	8
+				    max_width  	1428
+				    label      	
+|public class Tshirts extends Finery {
+|
+|	@Override
+|	public void show() {
+|		System.out.print("大T恤，");
+|		person.show();
+|	}
+|}
+				    )
+				line_color 	3342489
+				fill_color 	13434879
+				width      	1488
+				height     	481)))))
+	    (object Class_Category "proxy"
+		quid       	"5212D1930386"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list
+		    (object Class "clien"
+			quid       	"5212D1D401B9")
+		    (object Class "Subject"
+			quid       	"5212D1E802FE"
+			exportControl 	"Implementation"
+			operations 	(list Operations
+			    (object Operation "method"
+				quid       	"5212D24E016D"
+				concurrency 	"Sequential"
+				opExportControl 	"Public"
+				uid        	0)))
+		    (object Class "RealSubject"
+			quid       	"5212D3450130"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"5212D37203D2"
+				supplier   	"Logical View::proxy::Subject"
+				quidu      	"5212D1E802FE")))
+		    (object Class "Porxy"
+			quid       	"5212D362004D"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"5212D37C021C"
+				supplier   	"Logical View::proxy::Subject"
+				quidu      	"5212D1E802FE"))
+			operations 	(list Operations
+			    (object Operation "Proxy"
+				quid       	"5212DC090300"
+				parameters 	(list Parameters
+				    (object Parameter "mm"
+					quid       	"5212DC1C002E"
+					type       	"Person"
+					quidu      	"5209FAAE0356"))
+				concurrency 	"Sequential"
+				opExportControl 	"Public"
+				uid        	0))
+			class_attributes 	(list class_attribute_list
+			    (object ClassAttribute "realSubject"
+				quid       	"5212D3840363"
+				type       	"RealSubject"
+				quidu      	"5212D3450130")))
+		    (object Association "$UNNAMED$12"
+			quid       	"5212D3DA03CE"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$13"
+				quid       	"5212D3DB020E"
+				supplier   	"Logical View::proxy::RealSubject"
+				quidu      	"5212D3450130"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$14"
+				quid       	"5212D3DB0210"
+				supplier   	"Logical View::proxy::Porxy"
+				quidu      	"5212D362004D")))
+		    (object Association "$UNNAMED$15"
+			quid       	"5212D3FB0233"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$16"
+				quid       	"5212D3FC0163"
+				supplier   	"Logical View::proxy::Subject"
+				quidu      	"5212D1E802FE"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$17"
+				quid       	"5212D3FC0167"
+				supplier   	"Logical View::proxy::clien"
+				quidu      	"5212D1D401B9"))))
+		logical_presentations 	(list unit_reference_list
+		    (object ClassDiagram "proxy"
+			quid       	"5212D1C30194"
+			title      	"proxy"
+			zoom       	100
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	0
+			items      	(list diagram_item_list
+			    (object ClassView "Class" "Logical View::proxy::Porxy" @80
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				ShowOperationSignature 	TRUE
+				location   	(2018, 856)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@80
+				    location   	(1715, 748)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	606
+				    justify    	0
+				    label      	"Porxy")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"5212D362004D"
+				compartment 	(object Compartment
+				    Parent_View 	@80
+				    location   	(1715, 815)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    icon_style 	"Icon"
+				    fill_color 	13434879
+				    anchor     	2
+				    nlines     	3
+				    max_width  	513)
+				width      	624
+				height     	244
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::proxy::RealSubject" @81
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1009, 856)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@81
+				    location   	(833, 802)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	352
+				    justify    	0
+				    label      	"RealSubject")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"5212D3450130"
+				width      	370
+				height     	136
+				annotation 	8
+				autoResize 	TRUE)
+			    (object AssociationViewNew "$UNNAMED$12" @82
+				location   	(1449, 856)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5212D3DA03CE"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$13" @83
+					Parent_View 	@82
+					location   	(-406, 125)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"5212D3DB020E"
+					client     	@82
+					supplier   	@81
+					line_style 	0)
+				    (object RoleView "$UNNAMED$14" @84
+					Parent_View 	@82
+					location   	(-406, 125)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"5212D3DB0210"
+					client     	@82
+					supplier   	@80
+					line_style 	0)))
+			    (object ClassView "Class" "Logical View::proxy::clien" @85
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(648, 394)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@85
+				    location   	(552, 340)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	192
+				    justify    	0
+				    label      	"clien")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"5212D1D401B9"
+				width      	210
+				height     	136
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::proxy::Subject" @86
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				ShowOperationSignature 	TRUE
+				location   	(1450, 397)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@86
+				    location   	(1322, 314)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	256
+				    justify    	0
+				    label      	"Subject")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"5212D1E802FE"
+				compartment 	(object Compartment
+				    Parent_View 	@86
+				    location   	(1322, 381)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    icon_style 	"Icon"
+				    fill_color 	13434879
+				    anchor     	2
+				    nlines     	2
+				    max_width  	213)
+				width      	274
+				height     	194
+				annotation 	8
+				autoResize 	TRUE)
+			    (object InheritView "" @87
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5212D37203D2"
+				client     	@81
+				supplier   	@86
+				line_style 	0)
+			    (object InheritView "" @88
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5212D37C021C"
+				client     	@80
+				supplier   	@86
+				line_style 	0)
+			    (object AssociationViewNew "$UNNAMED$15" @89
+				location   	(1032, 395)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5212D3FB0233"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$16" @90
+					Parent_View 	@89
+					location   	(434, 33)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"5212D3FC0163"
+					client     	@89
+					supplier   	@86
+					line_style 	0)
+				    (object RoleView "$UNNAMED$17" @91
+					Parent_View 	@89
+					location   	(434, 33)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"5212D3FC0167"
+					client     	@89
+					supplier   	@85
+					line_style 	0)))
+			    (object NoteView @92
+				location   	(2550, 584)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@92
+				    location   	(2412, 524)
+				    fill_color 	13434879
+				    nlines     	2
+				    max_width  	240
+				    label      	"代理类")
+				line_color 	3342489
+				fill_color 	13434879
+				width      	300
+				height     	132)
+			    (object NoteView @93
+				location   	(513, 697)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@93
+				    location   	(375, 637)
+				    fill_color 	13434879
+				    nlines     	2
+				    max_width  	240
+				    label      	"被代理类")
+				line_color 	3342489
+				fill_color 	13434879
+				width      	300
+				height     	132)
+			    (object AttachView "" @94
+				stereotype 	TRUE
+				line_color 	3342489
+				client     	@93
+				supplier   	@81
+				line_style 	0)
+			    (object AttachView "" @95
+				stereotype 	TRUE
+				line_color 	3342489
+				client     	@92
+				supplier   	@80
+				line_style 	0)
+			    (object NoteView @96
+				location   	(1966, 166)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@96
+				    location   	(1703, 69)
+				    fill_color 	13434879
+				    nlines     	3
+				    max_width  	490
+				    label      	"接口：使代理类与非代理类有提供相同的方法")
+				line_color 	3342489
+				fill_color 	13434879
+				width      	550
+				height     	206)
+			    (object AttachView "" @97
+				stereotype 	TRUE
+				line_color 	3342489
+				client     	@86
+				supplier   	@96
 				line_style 	0))))))
 	logical_presentations 	(list unit_reference_list
 	    (object ClassDiagram "Main"
@@ -1868,7 +2298,7 @@
 		origin_x   	28
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object ClassView "Class" "Logical View::simple_factory_patterns::OperationAdd" @79
+		    (object ClassView "Class" "Logical View::simple_factory_patterns::OperationAdd" @98
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1884,7 +2314,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@79
+			    Parent_View 	@98
 			    location   	(2216, 1343)
 			    fill_color 	13434879
 			    nlines     	1
@@ -1899,7 +2329,7 @@
 			height     	198
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::simple_factory_patterns::OperationDiv" @80
+		    (object ClassView "Class" "Logical View::simple_factory_patterns::OperationDiv" @99
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1914,7 +2344,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@80
+			    Parent_View 	@99
 			    location   	(1637, 1362)
 			    fill_color 	13434879
 			    nlines     	1
@@ -1929,7 +2359,7 @@
 			height     	198
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::simple_factory_patterns::OperationMul" @81
+		    (object ClassView "Class" "Logical View::simple_factory_patterns::OperationMul" @100
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1944,7 +2374,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@81
+			    Parent_View 	@100
 			    location   	(1076, 1365)
 			    fill_color 	13434879
 			    nlines     	1
@@ -1959,7 +2389,7 @@
 			height     	198
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::simple_factory_patterns::operationSub" @82
+		    (object ClassView "Class" "Logical View::simple_factory_patterns::operationSub" @101
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1974,7 +2404,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@82
+			    Parent_View 	@101
 			    location   	(440, 1359)
 			    fill_color 	13434879
 			    nlines     	1
@@ -1989,7 +2419,7 @@
 			height     	198
 			annotation 	8
 			autoResize 	TRUE)
-		    (object NoteView @83
+		    (object NoteView @102
 			location   	(581, 159)
 			font       	(object Font
 			    size       	12
@@ -2001,7 +2431,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@83
+			    Parent_View 	@102
 			    location   	(443, 99)
 			    fill_color 	13434879
 			    nlines     	2
@@ -2011,7 +2441,7 @@
 			fill_color 	13434879
 			width      	300
 			height     	132)
-		    (object ClassView "Class" "Logical View::simple_factory_patterns::Operation" @84
+		    (object ClassView "Class" "Logical View::simple_factory_patterns::Operation" @103
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -2026,7 +2456,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@84
+			    Parent_View 	@103
 			    location   	(1292, 614)
 			    fill_color 	13434879
 			    nlines     	1
@@ -2038,7 +2468,7 @@
 			fill_color 	13434879
 			quidu      	"520312E30149"
 			compartment 	(object Compartment
-			    Parent_View 	@84
+			    Parent_View 	@103
 			    location   	(1292, 735)
 			    font       	(object Font
 				size       	10
@@ -2058,35 +2488,35 @@
 			height     	350
 			annotation 	8
 			autoResize 	TRUE)
-		    (object InheritView "" @85
+		    (object InheritView "" @104
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"520313D20279"
-			client     	@79
-			supplier   	@84
+			client     	@98
+			supplier   	@103
 			line_style 	0)
-		    (object InheritView "" @86
+		    (object InheritView "" @105
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"520313F100F9"
-			client     	@80
-			supplier   	@84
+			client     	@99
+			supplier   	@103
 			line_style 	0)
-		    (object InheritView "" @87
+		    (object InheritView "" @106
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"520313F70332"
-			client     	@81
-			supplier   	@84
+			client     	@100
+			supplier   	@103
 			line_style 	0)
-		    (object InheritView "" @88
+		    (object InheritView "" @107
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"520313FA0085"
-			client     	@82
-			supplier   	@84
+			client     	@101
+			supplier   	@103
 			line_style 	0)
-		    (object ClassView "Class" "Logical View::simple_factory_patterns::Factory" @89
+		    (object ClassView "Class" "Logical View::simple_factory_patterns::Factory" @108
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -2101,7 +2531,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@89
+			    Parent_View 	@108
 			    location   	(1285, 231)
 			    fill_color 	13434879
 			    nlines     	1
@@ -2113,7 +2543,7 @@
 			fill_color 	13434879
 			quidu      	"520312950232"
 			compartment 	(object Compartment
-			    Parent_View 	@89
+			    Parent_View 	@108
 			    location   	(1285, 352)
 			    font       	(object Font
 				size       	10
@@ -2133,7 +2563,7 @@
 			height     	250
 			annotation 	8
 			autoResize 	TRUE)
-		    (object AssociationViewNew "$UNNAMED$0" @90
+		    (object AssociationViewNew "$UNNAMED$0" @109
 			location   	(1611, 533)
 			font       	(object Font
 			    size       	12
@@ -2148,25 +2578,25 @@
 			line_color 	3342489
 			quidu      	"520314CC002F"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$1" @91
-				Parent_View 	@90
+			    (object RoleView "$UNNAMED$1" @110
+				Parent_View 	@109
 				location   	(733, -836)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"520314CD039C"
-				client     	@90
-				supplier   	@84
+				client     	@109
+				supplier   	@103
 				line_style 	0)
-			    (object RoleView "$UNNAMED$2" @92
-				Parent_View 	@90
+			    (object RoleView "$UNNAMED$2" @111
+				Parent_View 	@109
 				location   	(733, -836)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"520314CD039F"
-				client     	@90
-				supplier   	@89
+				client     	@109
+				supplier   	@108
 				line_style 	0)))
-		    (object ClassView "Class" "Logical View::simple_factory_patterns::FaceMain" @93
+		    (object ClassView "Class" "Logical View::simple_factory_patterns::FaceMain" @112
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -2181,7 +2611,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@93
+			    Parent_View 	@112
 			    location   	(643, 240)
 			    fill_color 	13434879
 			    nlines     	1
@@ -2196,13 +2626,13 @@
 			height     	198
 			annotation 	8
 			autoResize 	TRUE)
-		    (object AttachView "" @94
+		    (object AttachView "" @113
 			stereotype 	TRUE
 			line_color 	3342489
-			client     	@83
-			supplier   	@93
+			client     	@102
+			supplier   	@112
 			line_style 	0)
-		    (object AssociationViewNew "$UNNAMED$3" @95
+		    (object AssociationViewNew "$UNNAMED$3" @114
 			location   	(1288, 333)
 			font       	(object Font
 			    size       	12
@@ -2217,25 +2647,25 @@
 			line_color 	3342489
 			quidu      	"520315200240"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$4" @96
-				Parent_View 	@95
+			    (object RoleView "$UNNAMED$4" @115
+				Parent_View 	@114
 				location   	(404, -1439)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"52031521038C"
-				client     	@95
-				supplier   	@89
+				client     	@114
+				supplier   	@108
 				line_style 	0)
-			    (object RoleView "$UNNAMED$5" @97
-				Parent_View 	@95
+			    (object RoleView "$UNNAMED$5" @116
+				Parent_View 	@114
 				location   	(404, -1439)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"52031521038F"
-				client     	@95
-				supplier   	@93
+				client     	@114
+				supplier   	@112
 				line_style 	0)))
-		    (object NoteView @98
+		    (object NoteView @117
 			location   	(2047, 137)
 			font       	(object Font
 			    size       	12
@@ -2247,7 +2677,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@98
+			    Parent_View 	@117
 			    location   	(1909, 77)
 			    fill_color 	13434879
 			    nlines     	2
@@ -2257,13 +2687,13 @@
 			fill_color 	13434879
 			width      	300
 			height     	132)
-		    (object AttachView "" @99
+		    (object AttachView "" @118
 			stereotype 	TRUE
 			line_color 	3342489
-			client     	@98
-			supplier   	@89
+			client     	@117
+			supplier   	@108
 			line_style 	0)
-		    (object NoteView @100
+		    (object NoteView @119
 			location   	(463, 1662)
 			font       	(object Font
 			    size       	12
@@ -2275,7 +2705,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@100
+			    Parent_View 	@119
 			    location   	(325, 1602)
 			    fill_color 	13434879
 			    nlines     	2
@@ -2285,7 +2715,7 @@
 			fill_color 	13434879
 			width      	300
 			height     	132)
-		    (object NoteView @101
+		    (object NoteView @120
 			location   	(1147, 1665)
 			font       	(object Font
 			    size       	12
@@ -2297,7 +2727,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@101
+			    Parent_View 	@120
 			    location   	(1009, 1605)
 			    fill_color 	13434879
 			    nlines     	2
@@ -2307,7 +2737,7 @@
 			fill_color 	13434879
 			width      	300
 			height     	132)
-		    (object NoteView @102
+		    (object NoteView @121
 			location   	(1725, 1663)
 			font       	(object Font
 			    size       	12
@@ -2319,7 +2749,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@102
+			    Parent_View 	@121
 			    location   	(1587, 1603)
 			    fill_color 	13434879
 			    nlines     	2
@@ -2329,7 +2759,7 @@
 			fill_color 	13434879
 			width      	300
 			height     	132)
-		    (object NoteView @103
+		    (object NoteView @122
 			location   	(2297, 1666)
 			font       	(object Font
 			    size       	12
@@ -2341,7 +2771,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@103
+			    Parent_View 	@122
 			    location   	(2159, 1606)
 			    fill_color 	13434879
 			    nlines     	2
@@ -2351,31 +2781,31 @@
 			fill_color 	13434879
 			width      	300
 			height     	132)
-		    (object AttachView "" @104
+		    (object AttachView "" @123
 			stereotype 	TRUE
 			line_color 	3342489
-			client     	@100
-			supplier   	@82
+			client     	@119
+			supplier   	@101
 			line_style 	0)
-		    (object AttachView "" @105
+		    (object AttachView "" @124
 			stereotype 	TRUE
 			line_color 	3342489
-			client     	@101
-			supplier   	@81
+			client     	@120
+			supplier   	@100
 			line_style 	0)
-		    (object AttachView "" @106
+		    (object AttachView "" @125
 			stereotype 	TRUE
 			line_color 	3342489
-			client     	@102
-			supplier   	@80
+			client     	@121
+			supplier   	@99
 			line_style 	0)
-		    (object AttachView "" @107
+		    (object AttachView "" @126
 			stereotype 	TRUE
 			line_color 	3342489
-			client     	@103
-			supplier   	@79
+			client     	@122
+			supplier   	@98
 			line_style 	0)
-		    (object NoteView @108
+		    (object NoteView @127
 			location   	(2239, 525)
 			font       	(object Font
 			    size       	12
@@ -2387,7 +2817,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@108
+			    Parent_View 	@127
 			    location   	(1952, 450)
 			    fill_color 	13434879
 			    nlines     	2
@@ -2397,13 +2827,13 @@
 			fill_color 	13434879
 			width      	599
 			height     	162)
-		    (object AttachView "" @109
+		    (object AttachView "" @128
 			stereotype 	TRUE
 			line_color 	3342489
-			client     	@108
-			supplier   	@84
+			client     	@127
+			supplier   	@103
 			line_style 	0)
-		    (object CategoryView "Logical View::simple_factory_patterns" @110
+		    (object CategoryView "Logical View::simple_factory_patterns" @129
 			location   	(566, 2123)
 			font       	(object Font
 			    size       	12
@@ -2415,7 +2845,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@110
+			    Parent_View 	@129
 			    location   	(269, 2042)
 			    fill_color 	13434879
 			    nlines     	2

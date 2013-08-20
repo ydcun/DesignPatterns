@@ -1,0 +1,17 @@
+
+场景：
+	ydcun 通过qiang 给琪琪送鲜花，送巧克力
+
+要求：
+	1.琪琪只认识qiang不认识ydcun
+	2.鲜花和巧克力是ydcun送的
+
+实现：
+	分析：
+		1.此场景中qiang是帮助ydcun送东西的人，属于代理
+		
+	实现步骤：
+		1.创建subject接口来规定要被代理的方法
+		2.创建具体实现类realsubject并将实现subject接口
+		3.Proxy类也实现这个subject接口，添加一个realsubject对象每个方法都是通过调用realsubject对象实现
+		4.因为是琪琪不认识ydcun所以在创建proxy的时候将琪琪对象通过构造方法传递给realsubject
