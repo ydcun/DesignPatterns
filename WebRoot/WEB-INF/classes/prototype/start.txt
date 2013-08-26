@@ -1,0 +1,27 @@
+场景：（原型模式）
+	重复创建多个对象的时候很消耗时间，实现拷贝对象的目的
+
+分析：
+	1.在java中通过Cloneable这个接口来实现，并重写clone方法来实现拷贝对象（参数值也一起被拷贝）
+	2.如果要拷贝的对象中的属性中有对象，因为值也同时拷贝随意拷贝的对象的引用值是相同的，那也就是指向同一个对象，那样就不是我们要求的了
+	3.那实现方法就是让，那个对象也实现cloneable接口重写clone方法
+	//可以进行深度复制
+	protected Resume clone() {
+		Resume resume = null;
+		try {
+			resume = (Resume) super.clone();
+			resume.setWorkExperience((WorkExperience) this.workExperience.clone());
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+		}
+		return resume;
+	}
+	
+实现步骤：
+	1.创建Resume类实现Cloneable接口并重写clone方法
+		类中有name，age，sex，workExperience
+	2.创建WorkExperience类（工作开始时间，结束时间，公司名称）
+	3.创建Main类来进行测试
+	
+总结：
+	这样拷贝的对象是完全独立的不会发生关联，修改某个对象不会对其他的对象造成影响
